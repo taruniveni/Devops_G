@@ -1,0 +1,9 @@
+DevOps Sample Application
+Version: 1.0
+Environment: Development
+Status: Running
+
+Feature: Application update
+Version: 1.1
+
+
