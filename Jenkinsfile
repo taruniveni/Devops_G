@@ -17,6 +17,15 @@ pipeline {
                 sh 'test -f scripts/deploy.sh'
             }
         }
+        stage('Test') {
+            steps {
+                echo 'Running application tests...'
+                sh 'test -s app/app.txt'
+                sh 'test -s config/app.conf'
+                sh 'test -x scripts/deploy.sh || chmod +x scripts/deploy.sh'
+                echo 'All tests passed!'
+            } 
+        }
 
         stage('Deploy') {
             steps {
