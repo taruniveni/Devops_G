@@ -6,4 +6,7 @@ Status: Running
 Feature: Application update
 Version: 1.1
 
+Feature: Application update
+Version: 1.1
+
 
